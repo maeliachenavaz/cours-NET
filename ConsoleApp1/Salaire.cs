@@ -37,7 +37,17 @@
     {
         foreach (String data in mois)
         {
-            Console.WriteLine(data + " 1500");
+            if (data != "Décembre")
+            {
+                Console.WriteLine(data + " 1500");
+            } else
+            {
+                int salaireAnnuel = 1500 * 12;
+                double tauxPrime = 0.10;
+                double prime = salaireAnnuel * tauxPrime;
+                double salaireAvecPrime = 1500 + prime;
+                Console.WriteLine(data + " " + salaireAvecPrime);
+            }
         }
     }
 
