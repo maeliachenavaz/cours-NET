@@ -13,7 +13,7 @@
         }
         else
         {
-            float salaireMensuelNet = CalculSalaireMensuelNet(salaireAnnuelBrut, tauxImposition);
+            double salaireMensuelNet = CalculSalaireMensuelNet(salaireAnnuelBrut, tauxImposition);
 
             if (salaireAnnuelBrut > 50000)
             {
@@ -35,17 +35,25 @@
 
     public static void getSalaireParMois()
     {
+        Console.WriteLine("Salaire annuel brut : ");
+        int salaireAnnuelBrut = Salaire.InputToInt(Console.ReadLine());
+
+        Console.WriteLine("Taux d'imposition : ");
+        int tauxImposition = InputToInt(Console.ReadLine());
+
+        double salaireMensuel = CalculSalaireMensuelNet(salaireAnnuelBrut, tauxImposition);
+
+        Console.WriteLine("Salaire mensuel net par mois : ");
         foreach (String data in mois)
         {
-            if (data != "Décembre")
+            if (data != "Août" && data != "Décembre")
             {
-                Console.WriteLine(data + " 1500");
-            } else
+                Console.WriteLine(data + " " + salaireMensuel);
+            } else if (data == "Décembre")
             {
-                int salaireAnnuel = 1500 * 12;
                 double tauxPrime = 0.10;
-                double prime = salaireAnnuel * tauxPrime;
-                double salaireAvecPrime = 1500 + prime;
+                double prime = salaireAnnuelBrut * tauxPrime;
+                double salaireAvecPrime = salaireMensuel + prime;
                 Console.WriteLine(data + " " + salaireAvecPrime);
             }
         }
@@ -67,26 +75,26 @@
         }
     }
 
-    private static float CalculSalaireMensuelNet(int salaireAnnuelBrut, int tauxImposition)
+    private static double CalculSalaireMensuelNet(int salaireAnnuelBrut, int tauxImposition)
     {
-        float salaireMensuelBrut = CalculSalaireMensuelBrut(salaireAnnuelBrut);
-        float taxeImpostion = CalculTaxeImposition(salaireMensuelBrut, tauxImposition);
+        double salaireMensuelBrut = CalculSalaireMensuelBrut(salaireAnnuelBrut);
+        double taxeImpostion = CalculTaxeImposition(salaireMensuelBrut, tauxImposition);
 
-        float salaireAfterTaxe = salaireMensuelBrut - taxeImpostion;
+        double salaireAfterTaxe = salaireMensuelBrut - taxeImpostion;
 
         return salaireAfterTaxe;
     }
 
-    private static float CalculTaxeImposition(float salaireMensuelBrut, int tauxImposition)
+    private static double CalculTaxeImposition(double salaireMensuelBrut, int tauxImposition)
     {
-        float taxeImpostion = salaireMensuelBrut * (tauxImposition / 100);
+        double taxeImpostion = salaireMensuelBrut * (tauxImposition / 100);
 
         return taxeImpostion;
     }
 
-    private static float CalculSalaireMensuelBrut(int salaireAnnuelBrut)
+    private static double CalculSalaireMensuelBrut(int salaireAnnuelBrut)
     {
-        float salaireMensuelBrut = salaireAnnuelBrut / 12;
+        double salaireMensuelBrut = salaireAnnuelBrut / 12;
 
         return salaireMensuelBrut;
     }
