@@ -1,7 +1,5 @@
 ﻿class Salaire
 {
-    private IList<String> mois = ["Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juillet", "Août",
-        "Septembre", "Octobre", "Novembre", "Décembre"];
     public static void getSalaire()
     {
         Console.WriteLine("Salaire annuel brut : ");
@@ -34,6 +32,17 @@
             Console.WriteLine("Salaire mensuel net : " + salaireMensuelNet);
         }
     }
+
+    public static void getSalaireParMois()
+    {
+        foreach (String data in mois)
+        {
+            Console.WriteLine(data + " 1500");
+        }
+    }
+
+    private static IList<String> mois = new List<String> {"Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juillet", "Août",
+        "Septembre", "Octobre", "Novembre", "Décembre" };
     private static int InputToInt(String input)
     {
         try
