@@ -41,6 +41,9 @@
         Console.WriteLine("Taux d'imposition : ");
         int tauxImposition = InputToInt(Console.ReadLine());
 
+        Console.WriteLine("Montant prime de Noël : ");
+        int primeNoel = InputToInt(Console.ReadLine());
+
         double salaireMensuel = CalculSalaireMensuelNet(salaireAnnuelBrut, tauxImposition);
 
         Console.WriteLine("Salaire mensuel net par mois : ");
@@ -51,7 +54,7 @@
                 Console.WriteLine(data + " " + salaireMensuel);
             } else if (data == "Décembre")
             {
-                double tauxPrime = 0.10;
+                double tauxPrime = primeNoel / 100.0;
                 double prime = salaireAnnuelBrut * tauxPrime;
                 double salaireAvecPrime = salaireMensuel + prime;
                 Console.WriteLine(data + " " + salaireAvecPrime);

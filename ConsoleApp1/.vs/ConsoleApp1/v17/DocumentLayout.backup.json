@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\33661\\Desktop\\git\\cours-NET\\ConsoleApp1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1B6B7036-9608-434D-97DC-1A4BF4464DE7}|ConsoleApp1.csproj|c:\\users\\33661\\desktop\\git\\cours-net\\consoleapp1\\salaire.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B6B7036-9608-434D-97DC-1A4BF4464DE7}|ConsoleApp1.csproj|solutionrelative:salaire.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{1B6B7036-9608-434D-97DC-1A4BF4464DE7}|ConsoleApp1.csproj|c:\\users\\33661\\desktop\\git\\cours-net\\consoleapp1\\programme.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1B6B7036-9608-434D-97DC-1A4BF4464DE7}|ConsoleApp1.csproj|solutionrelative:programme.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B6B7036-9608-434D-97DC-1A4BF4464DE7}|ConsoleApp1.csproj|c:\\users\\33661\\desktop\\git\\cours-net\\consoleapp1\\salaire.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B6B7036-9608-434D-97DC-1A4BF4464DE7}|ConsoleApp1.csproj|solutionrelative:salaire.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -26,20 +26,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Salaire.cs",
               "DocumentMoniker": "C:\\Users\\33661\\Desktop\\git\\cours-NET\\ConsoleApp1\\Salaire.cs",
               "RelativeDocumentMoniker": "Salaire.cs",
               "ToolTip": "C:\\Users\\33661\\Desktop\\git\\cours-NET\\ConsoleApp1\\Salaire.cs",
               "RelativeToolTip": "Salaire.cs",
-              "ViewState": "AgIAACIAAAAAAAAAAAAQwEgAAAAZAAAAAAAAAA==",
+              "ViewState": "AgIAACoAAAAAAAAAAAAYwDIAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-24T13:47:12.313Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Programme.cs",
               "DocumentMoniker": "C:\\Users\\33661\\Desktop\\git\\cours-NET\\ConsoleApp1\\Programme.cs",
               "RelativeDocumentMoniker": "Programme.cs",
