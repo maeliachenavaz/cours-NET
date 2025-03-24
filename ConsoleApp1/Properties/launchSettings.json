@@ -2,7 +2,7 @@
   "profiles": {
     "ConsoleApp1": {
       "commandName": "Project",
-      "commandLineArgs": "salaire\r\ntaxe"
+      "commandLineArgs": "30000\r\n10"
     },
     "WSL": {
       "commandName": "WSL2",
