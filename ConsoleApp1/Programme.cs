@@ -3,13 +3,30 @@
     public static void Main()
     {
         Console.WriteLine("Salaire annuel brut : ");
-        int salaireAnnuelBrut = Convert.ToInt32(Console.ReadLine());
+        int salaireAnnuelBrut = InputToInt(Console.ReadLine());
         Console.WriteLine("Taux d'imposition : ");
-        int tauxImposition = Convert.ToInt32(Console.ReadLine());
+        int tauxImposition = InputToInt(Console.ReadLine());
 
-        float salaireAnnuelNet = CalculSalaireMensuelNet(salaireAnnuelBrut, tauxImposition);
+        if (salaireAnnuelBrut == 0 && tauxImposition == 0)
+        {
+            Console.WriteLine("Dommage pour vous..");
+        } else
+        {
+            float salaireAnnuelNet = CalculSalaireMensuelNet(salaireAnnuelBrut, tauxImposition);
 
-        Console.WriteLine("Salaire net mensuel : " + salaireAnnuelNet);
+            Console.WriteLine("Salaire net mensuel : " + salaireAnnuelNet);
+        }
+    }
+
+    private static int InputToInt(String input)
+    {
+        try
+        {
+            int inputToInt = Convert.ToInt32(input);
+            return inputToInt;
+        } catch (System.FormatException) {
+            return 0;
+        }
     }
 
     private static float CalculSalaireMensuelNet(int salaireAnnuelBrut, int tauxImposition) 
