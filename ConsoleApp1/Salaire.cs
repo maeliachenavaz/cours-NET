@@ -3,7 +3,7 @@
     public static void getSalaire()
     {
         Console.WriteLine("Salaire annuel brut : ");
-        int salaireAnnuelBrut = Salaire.InputToInt(Console.ReadLine());
+        int salaireAnnuelBrut = InputToInt(Console.ReadLine());
         Console.WriteLine("Taux d'imposition : ");
         int tauxImposition = InputToInt(Console.ReadLine());
 
@@ -36,7 +36,7 @@
     public static void getSalaireParMois()
     {
         Console.WriteLine("Salaire annuel brut : ");
-        int salaireAnnuelBrut = Salaire.InputToInt(Console.ReadLine());
+        int salaireAnnuelBrut = InputToInt(Console.ReadLine());
 
         Console.WriteLine("Taux d'imposition : ");
         int tauxImposition = InputToInt(Console.ReadLine());
@@ -46,18 +46,25 @@
 
         double salaireMensuel = CalculSalaireMensuelNet(salaireAnnuelBrut, tauxImposition);
 
-        Console.WriteLine("Salaire mensuel net par mois : ");
-        foreach (String data in mois)
+        if (salaireAnnuelBrut == 0 || tauxImposition == 0)
         {
-            if (data != "Août" && data != "Décembre")
+            Console.WriteLine("Dommage pour vous..");
+        } else
+        {
+            Console.WriteLine("Salaire mensuel net par mois : ");
+            foreach (String data in mois)
             {
-                Console.WriteLine(data + " " + salaireMensuel);
-            } else if (data == "Décembre")
-            {
-                double tauxPrime = primeNoel / 100.0;
-                double prime = salaireAnnuelBrut * tauxPrime;
-                double salaireAvecPrime = salaireMensuel + prime;
-                Console.WriteLine(data + " " + salaireAvecPrime);
+                if (data != "Août" && data != "Décembre")
+                {
+                    Console.WriteLine(data + " " + salaireMensuel);
+                }
+                else if (data == "Décembre")
+                {
+                    double tauxPrime = primeNoel / 100.0;
+                    double prime = salaireAnnuelBrut * tauxPrime;
+                    double salaireAvecPrime = salaireMensuel + prime;
+                    Console.WriteLine(data + " " + salaireAvecPrime);
+                }
             }
         }
     }
@@ -74,7 +81,9 @@
         }
         catch (System.FormatException)
         {
-            return 0;
+            Console.WriteLine("Erreur : veuillez entrez un int.");
+            int inputToInt = InputToInt(Console.ReadLine());
+            return inputToInt;
         }
     }
 
