@@ -2,26 +2,26 @@
 {
     static void Main(string[] args)
     {
-        int salaire = Convert.ToInt32(args[0]);
-        int taxe = Convert.ToInt32(args[1]);
+        Console.WriteLine("Salaire annuel brut : ");
+        int salaireAnnuelBrut = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("Taux d'imposition : ");
+        int tauxImposition = Convert.ToInt32(Console.ReadLine());
 
-        float salaireNet = calculSalaireMensuelNet(salaire, taxe);
-        Console.WriteLine("Salaire annuel brut : " + salaire);
-        Console.WriteLine("Taxe : " + taxe);
-        Console.WriteLine("Salaire net mensuel : " + salaireNet);
+        float salaireAnnuelNet = calculSalaireMensuelNet(salaireAnnuelBrut, tauxImposition);
+
+        Console.WriteLine("Salaire net mensuel : " + salaireAnnuelNet);
     }
 
-    static float calculSalaireMensuelNet(int salaire, int taxe) 
+    static float calculSalaireMensuelNet(int salaireAnnuelBrut, int tauxImposition) 
     {
-        float salaireMensuel = calculSalaireMensuelBrut(salaire);
-        float tauxImposition = taxe / 100;
-        float salaireAfterTaxe = salaireMensuel - (salaireMensuel * tauxImposition);
+        float salaireMensuelBrut = calculSalaireMensuelBrut(salaireAnnuelBrut);
+        float salaireAfterTaxe = salaireMensuelBrut - (salaireMensuelBrut * (tauxImposition / 100));
         return salaireAfterTaxe;
     }
 
-    static float calculSalaireMensuelBrut(int salaire)
+    static float calculSalaireMensuelBrut(int salaireAnnuelBrut)
     {
-        float mensuel = salaire / 12;
-        return mensuel;
+        float salaireMensuelBrut = salaireAnnuelBrut / 12;
+        return salaireMensuelBrut;
     }
 }
