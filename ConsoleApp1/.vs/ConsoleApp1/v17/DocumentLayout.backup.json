@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\33661\\Desktop\\git\\cours-NET\\ConsoleApp1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1B6B7036-9608-434D-97DC-1A4BF4464DE7}|ConsoleApp1.csproj|c:\\users\\33661\\desktop\\git\\cours-net\\consoleapp1\\salaire.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B6B7036-9608-434D-97DC-1A4BF4464DE7}|ConsoleApp1.csproj|solutionrelative:salaire.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{1B6B7036-9608-434D-97DC-1A4BF4464DE7}|ConsoleApp1.csproj|c:\\users\\33661\\desktop\\git\\cours-net\\consoleapp1\\programme.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1B6B7036-9608-434D-97DC-1A4BF4464DE7}|ConsoleApp1.csproj|solutionrelative:programme.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B6B7036-9608-434D-97DC-1A4BF4464DE7}|ConsoleApp1.csproj|c:\\users\\33661\\desktop\\git\\cours-net\\consoleapp1\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B6B7036-9608-434D-97DC-1A4BF4464DE7}|ConsoleApp1.csproj|solutionrelative:user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B6B7036-9608-434D-97DC-1A4BF4464DE7}|ConsoleApp1.csproj|c:\\users\\33661\\desktop\\git\\cours-net\\consoleapp1\\enummois.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B6B7036-9608-434D-97DC-1A4BF4464DE7}|ConsoleApp1.csproj|solutionrelative:enummois.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,26 +34,39 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Salaire.cs",
-              "DocumentMoniker": "C:\\Users\\33661\\Desktop\\git\\cours-NET\\ConsoleApp1\\Salaire.cs",
-              "RelativeDocumentMoniker": "Salaire.cs",
-              "ToolTip": "C:\\Users\\33661\\Desktop\\git\\cours-NET\\ConsoleApp1\\Salaire.cs",
-              "RelativeToolTip": "Salaire.cs",
-              "ViewState": "AgIAADkAAAAAAAAAAAAYwE0AAAA8AAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "EnumMois.cs",
+              "DocumentMoniker": "C:\\Users\\33661\\Desktop\\git\\cours-NET\\ConsoleApp1\\EnumMois.cs",
+              "RelativeDocumentMoniker": "EnumMois.cs",
+              "ToolTip": "C:\\Users\\33661\\Desktop\\git\\cours-NET\\ConsoleApp1\\EnumMois.cs",
+              "RelativeToolTip": "EnumMois.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAcAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-25T08:23:02.077Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\33661\\Desktop\\git\\cours-NET\\ConsoleApp1\\User.cs",
+              "RelativeDocumentMoniker": "User.cs",
+              "ToolTip": "C:\\Users\\33661\\Desktop\\git\\cours-NET\\ConsoleApp1\\User.cs",
+              "RelativeToolTip": "User.cs",
+              "ViewState": "AgIAAHcAAAAAAAAAAADwv3kAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-24T13:47:12.313Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Programme.cs",
               "DocumentMoniker": "C:\\Users\\33661\\Desktop\\git\\cours-NET\\ConsoleApp1\\Programme.cs",
               "RelativeDocumentMoniker": "Programme.cs",
               "ToolTip": "C:\\Users\\33661\\Desktop\\git\\cours-NET\\ConsoleApp1\\Programme.cs",
               "RelativeToolTip": "Programme.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAkAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-24T09:40:32.709Z",
               "EditorCaption": ""
